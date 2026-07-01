@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山區度假別墅 - 建築設計需求與草圖溝通平台</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 10px;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        /* 圖片區塊優化 */
+        .image-container {
+            text-align: center;
+            background: #eaeaea;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* 需求清單樣式 */
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .spec-item {
+            background: #f1f3f5;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .spec-item strong {
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        /* 互動式變更日誌 */
+        .changelog {
+            list-style: none;
+            padding: 0;
+        }
+
+        .changelog li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        .date-badge {
+            background: #e9ecef;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* 適合 iPad 橫版與直版的縮放 */
+        @media (max-width: 768px) {
+            .container { margin: 1rem auto; }
+            header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>山區度假別墅別墅 - 建築溝通草案Portal</h1>
+        <p>📱 方便 iPad 現場翻閱與大方向明確需求對接</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>📐 最新 3D 外觀與透視草圖 (修正版)</h2>
+            <p><strong>面向說明：</strong> 房屋正式正面朝向左側下坡水泥馬路。側邊泥土路規劃為車庫（停放一部車）。</p>
+            <div class="image-container">
+                <img src="house_design.jpg" alt="最新度假別墅 3D 設計草圖" onerror="this.src='https://via.placeholder.com/1000x560.png?text=請將最新3D設計圖命名為+house_design.jpg+放入GitHub倉庫'">
+                <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">※ 因應山區多雨環境，全面修正為三角尖頂（雙坡屋頂）設計。</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📋 核心配置與明確需求 (Specification)</h2>
+            <div class="spec-grid">
+                <div class="spec-item">
+                    <strong>📐 基地坪數</strong>
+                    地坪大約 60 坪，主體建築依地勢最大化正面採光。
+                </div>
+                <div class="spec-item">
+                    <strong>🏠 屋頂與挑高</strong>
+                    山區多雨，必須採用三角尖頂。大客廳採挑高設計。
+                </div>
+                <div class="spec-item">
+                    <strong>🚪 玄關與大門</strong>
+                    正大門位於正中央面對水泥馬路。進門先經過獨立的工具室玄關。
+                </div>
+                <div class="spec-item">
+                    <strong>🛌 樓中樓主臥 (Mezzanine)</strong>
+                    利用廚房半邊空間做夾層樓中樓作主臥室。空間僅以圍簾作隱私阻隔，維持通透感，並設有安全管制矮門。
+                </div>
+                <div class="spec-item">
+                    <strong>🔄 垂直動線</strong>
+                    採用旋轉式上下樓梯，且必須設置在【屋內】。
+                </div>
+                <div class="spec-item">
+                    <strong>🍳 廚房與餐廳</strong>
+                    無隔間大廚房，餐廳配置長形大餐桌，落地窗直接面對正面馬路景觀。
+                </div>
+                <div class="spec-item">
+                    <strong>🔥 大廳核心</strong>
+                    大廳中央設置做煙囪的中央暖爐（壁爐設計）。
+                </div>
+                <div class="spec-item">
+                    <strong>🛏️ 後方套房區</strong>
+                    往最裡面搭蓋與客廳挑高同高的兩層樓結構。共 4 間套房（每層 2 間），洗廁間每層各設一間公用。
+                </div>
+                <div class="spec-item">
+                    <strong>🌅 陽台與景觀台</strong>
+                    屋頂大斜張需涵蓋陽台面積。正門做墊高陽台，擺放室外迎賓椅及烤肉區；樓中樓主臥陽台需向外延伸做景觀台。
+                </div>
+                <div class="spec-item">
+                    <strong>🚗 車庫配置</strong>
+                    於側邊馬路（現泥土路面那一側）規劃可停放一台車的車庫空間。
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🔄 溝通變更日誌 (Changelog)</h2>
+            <ul class="changelog">
+                <li><span class="date-badge">2026-06-26</span> 修正：房屋轉向，正面改為面對水泥馬路（下坡側）；修正屋頂為因應山區多雨的三角尖頂；將旋轉樓梯移至屋內；側邊規劃單車位車庫。</li>
+                <li><span class="date-badge">2026-06-25</span> 初始版本：斜張單坡屋頂、室外樓梯與初步 3D 配置概念。</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
